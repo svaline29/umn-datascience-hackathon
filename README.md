@@ -1,17 +1,21 @@
-# handwritten-slides-a11y
+# umn-datascience-hackathon
 
-Agent skill that turns a PDF of handwritten slides, one slide per page, into screen-reader HTML with Presentation MathML. The checklist is Revised Section 508 (WCAG 2.0 Level A and AA) and WCAG 2.1 Level AA. Uncertain handwriting stops for a person to confirm before the transcript is called ready.
+Agent skills for this project. Each skill is one folder under `skills/`, in the [Agent Skills](https://agentskills.io) layout (`SKILL.md`, plus `references/` and `scripts/` when needed). Cursor, Claude, Codex, and any other agent that reads `SKILL.md` can use them.
 
-The skill is the `SKILL.md` file in this folder, plus `references/` and `scripts/`. That layout follows the [Agent Skills](https://agentskills.io) format, so Cursor, Claude, Codex, and any other agent that reads `SKILL.md` can use it. Nothing here is tied to one product.
+## Skills
 
-Point the agent at this directory and give it a PDF. To install it as a named skill, link this folder into that product's skills directory:
+| Folder | What it does |
+| --- | --- |
+| `skills/handwritten-slides-a11y/` | Turns a PDF of handwritten slides, one slide per page, into screen-reader HTML with Presentation MathML. Checks Revised Section 508 (WCAG 2.0 Level A and AA) and WCAG 2.1 Level AA. Stops for a person to confirm uncertain handwriting before the transcript is called ready. |
+
+Point the agent at a skill folder and give it the input that skill expects. To install one as a named skill, link that folder:
 
 ```bash
 # Cursor, for every project
 mkdir -p ~/.cursor/skills
-ln -s "$(pwd)" ~/.cursor/skills/handwritten-slides-a11y
+ln -s "$(pwd)/skills/handwritten-slides-a11y" ~/.cursor/skills/handwritten-slides-a11y
 
 # Claude Code
 mkdir -p ~/.claude/skills
-ln -s "$(pwd)" ~/.claude/skills/handwritten-slides-a11y
+ln -s "$(pwd)/skills/handwritten-slides-a11y" ~/.claude/skills/handwritten-slides-a11y
 ```
