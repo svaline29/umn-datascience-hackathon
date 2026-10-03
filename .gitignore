@@ -1,0 +1,8 @@
+# Rasterized pages and generated transcripts. Decks may be unpublished.
+work/
+out/
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
