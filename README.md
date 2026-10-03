@@ -1,4 +1,4 @@
-# umn-datascience-hackathon
+# hackathon
 
 Agent skills for this project. Each skill is one folder under `skills/`, in the [Agent Skills](https://agentskills.io) layout (`SKILL.md`, plus `references/` and `scripts/` when needed). Cursor, Claude, Codex, and any other agent that reads `SKILL.md` can use them.
 
