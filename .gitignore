@@ -1,6 +1,5 @@
-# Rasterized pages and generated transcripts. Decks may be unpublished.
+# Rasterized page images. Large, and the source PDFs may be unpublished.
 work/
-out/
 
 .venv/
 __pycache__/
